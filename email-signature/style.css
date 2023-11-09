@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.signature{
+    width: 700px;
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #2E2E2E;
+}
+
+.signature .logo{
+    margin: 25px 30px 25px 25px;
+    flex: 0 0 auto;
+}
+
+.signature .user-content{
+    flex: 1 0 auto;
+}
+
+.signature .user-content .user-info{
+    margin: 30px 0 30px 0;
+}
+
+.signature .user-content .user-info .name{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.signature .user-content .user-info .work{
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.signature .user-content .user-info .contact{
+    font-weight: 200;
+}
+
+.signature .user-content .user-info .contact i{
+    margin-right: 10px;
+}
+
+.signature .user-content .user-info .contact p{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.signature .user-content .user-rrss a{
+    text-decoration: none;
+}
+
+.signature .user-content .user-rrss i{
+    font-size: 32px;
+    margin-right: 10px;
+}
+
+#work-signature{
+    background-color: #2E2E2E;
+    color: white;
+}
+
+#work-signature .name{
+    color: #BB84E8;
+}
+
+#friends-signature{
+    border-bottom: none;
+}
