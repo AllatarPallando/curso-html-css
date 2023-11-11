@@ -18,8 +18,10 @@ a{
 #navbar{
     background-color: #2E2E2E;
     height: 80px;
+    width: 100%;
     text-align: center;
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid rgba(187, 132, 232, 0.53);
+    position: fixed;
 }
 
 #navbar ul{
@@ -39,12 +41,46 @@ a{
     font-size: 18px;
 }
 
-#navbar li a:hover{
+#navbar li a:hover, #user-info li a:hover{
     color: #BB84E8;
 }
 
 #navbar figure, #navbar img{
     width: 50px;
     height: 50px;
+}
+
+#user-info{
+    height: 180px;
+    background-size: cover;
+    background: url("img/img-resource-5.png") no-repeat center;
+    color: white;
+    padding: 20px ;
+    position: relative;
+    top: 82px;
+}
+
+#user-info h1{
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+#user-info h4{
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+#user-info #rr-ss ul{
+    margin-top: 10px;
+}
+
+#user-info #rr-ss li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#user-info #rr-ss li a{
+    font-size: 26px;
+    color: #BB84E8;
 }
 
