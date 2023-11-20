@@ -1,0 +1,351 @@
+/* CSS GENERAL */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h2{
+    line-height: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+figcaption{
+    display: none;
+}
+
+.button{
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #5E1914;
+    border-radius: 8px;
+    background-color: #5E1914;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.button:hover{
+    background-color: #FFFFFF;
+    color: #5E1914;
+}
+
+/* CSS NAVBAR */
+#navbar{
+    background-color: #2E2E2E;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    z-index: 9999;
+    border-bottom: 2px solid #5E1914;
+}
+
+#navbar ul{
+    padding-top: 15px;
+    height: 65px;
+}
+
+#navbar li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 30px;
+}
+
+#navbar li a{
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+#navbar li a:hover, #user-info li a:hover{
+    text-decoration: underline;
+}
+
+#navbar figure, #navbar img{
+    width: 50px;
+    height: 50px;
+}
+
+/* CSS MAIN*/
+main{
+    position: relative;
+    top: 80px;
+}
+
+/*CSS COMPANY-INFO SECTION*/
+#company-info{
+    height: 110px;
+    padding: 30px 40px;
+    background-color: #5E1914;
+    color: #FFFFFF;
+}
+
+#company-info h1{
+    margin: 3px 0;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 24px;
+}
+
+#company-info h4{
+    font-weight: lighter;
+    text-transform: uppercase;
+    line-height: 16px;
+}
+
+.rr-ss ul{
+    margin-top: 30px;
+}
+
+ .rr-ss li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.rr-ss li a{
+    font-size: 26px;
+    color: #FFFFFF;
+}
+
+/* CSS ABOUT-US SECTION */
+#about-us {
+    padding: 60px 40px;
+    display: flex;
+}
+
+#about-us video{
+    width: 420px;
+    height: auto;
+    margin-right: 100px;
+}
+
+#about-us-text{
+    display: flex;
+    flex-direction: column;
+}
+
+#about-us-text p{
+    text-align: justify;
+    text-justify:inter-word;
+    margin-bottom: 30px;
+}
+
+/* CSS SERVICES SECTION */
+#services{
+    background-color: #2E2E2E;
+    padding: 15px 0;
+}
+
+#services h2{
+    padding-top: 30px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+#services-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px 30px 40px 30px;
+}
+
+#services-grid .service{
+    height: 150px;
+    background-color: #FFFFFF;
+    border: 2px solid #5E1914;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+#services-grid .service a{
+    color: #2E2E2E;
+    display: flex;
+    justify-content: normal;
+    align-items: center;
+}
+
+#services-grid .service a i{
+    font-size: 60px;
+    color: #5E1914;
+    margin: 0 20px;
+}
+
+#services-grid .service a section{
+    margin: 10px 20px 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#services-grid .service a section>*:last-child{
+    align-self: end;
+}
+
+#services-grid .service a h6{
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+#services-grid .service a p{
+    font-size: 14px;
+    line-height: 14px;
+    text-align: justify;
+    height: 50px;
+}
+
+#services-grid .service a .button{
+    font-size: 12px;
+}
+
+/* CSS GALLERY SECTION*/
+#gallery{
+    height: 530px;
+    overflow: hidden;
+    display: flex;
+}
+
+#gallery-fixed{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+}
+
+#gallery-fixed h2{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background-color: #5E1914;
+    margin-bottom: 55px;
+}
+
+#logo-gallery{
+    width: fit-content;
+    height: 322px;
+}
+
+#logo-gallery img{
+    width: 300px;
+    height: auto;
+}
+
+#gallery-slider{
+    width: 60%;
+}
+
+#gallery-slider .slide{
+    width: 95%;
+    height: 490px;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #5E1914;
+    padding: 20px;
+}
+
+
+#gallery-slider .slide .img-gallery{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gallery-slider .slide img{
+    width: 313px;
+    height: 210px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* CSS CONTACT SECTION */
+#contact{
+    height: 400px;
+    background-color: #2E2E2E;
+    padding: 40px;
+}
+
+#contact h2{
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    padding: 0 250px;
+}
+
+#contact-form label{
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+
+#contact-form .input{
+    height: 30px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+}
+
+#contact-form .input-area{
+    height: 60px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+#contact-form .button{
+    font-weight: 600;
+}
+
+/* CSS FOOTER */
+#footer{
+    position: relative;
+    top: 80px;
+    background-color: #5E1914;
+}
+
+#footer .rr-ss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#footer .rr-ss ul{
+    margin-top: 0;
+}
+
+#copy{
+    padding: 5px;
+    border-top: 1px solid #FFFFFF;
+}
+
+#copy p{
+    color: #FFFFFF;
+    text-align: center;
+}
+
+
+
+
+
+
+
